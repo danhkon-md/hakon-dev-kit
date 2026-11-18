@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "pd-audit": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "/Users/danko/Proyectos/mi-primera-app",
+        "python",
+        "-m",
+        "pd_audit.mcp_server"
+      ],
+      "timeoutSeconds": 300
+    }
+  }
+}

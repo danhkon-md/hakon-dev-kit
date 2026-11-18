@@ -1,0 +1,6 @@
+{
+  "name": "hakon-dev-kit",
+  "version": "0.1.0",
+  "description": "Kit de desarrollo Python con uv, pytest, reglas Light Mode y servidor MCP pd-audit.",
+  "logo": "assets/logo.svg"
+}
