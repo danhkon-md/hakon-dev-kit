@@ -1,3 +1,43 @@
+# hakon-dev-kit
+
+![Version](https://img.shields.io/badge/version-0.1.0-blue)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![Antigravity Plugin](https://img.shields.io/badge/Antigravity-Plugin-black)
+![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB)
+
+**A self-contained plugin for Google Antigravity** combining context-aware engineering rules, a modern Python scaffolding skill (`uv` + `pytest`), and a bundled MCP server (`pd-audit`) for deterministic auditing and deduplication of Pure Data (`.jsonl`) training datasets.
+
+---
+
+## ✨ What's Included
+
+| Component | Path | Trigger / Activation | Purpose |
+| :--- | :--- | :--- | :--- |
+| **Core Workflow Rule** | `rules/base.md` | `always_on` | Enforces plan-first execution, structured walkthroughs, and concise technical responses. |
+| **Python Standards** | `rules/python.md` | `**/*.py`, `pyproject.toml`, `uv.lock` | Enforces `uv`, `pytest`, strict type hints, `pathlib`, and `src/` + `tests/` layout. |
+| **UI Light Mode Rule** | `rules/ui-light-mode.md` | `**/*.html`, `**/*.css`, `**/*.js` | Enforces clean Light Mode interfaces by default across web prototypes and dashboards. |
+| **Project Scaffolder** | `skills/init-uv-pytest` | `/init-uv-pytest` | Bootstraps a complete Python package with `uv`, `pyproject.toml`, and passing `pytest` tests. |
+| **Pure Data MCP Server** | `servers/pd-audit` | Automatic via MCP | Exposes `auditar_dataset_pd` and `limpiar_dataset_pd` to validate Pd syntax and deduplicate `.jsonl` datasets. |
+
+---
+
+## 🚀 Quick Install
+
+Install directly from GitHub using the Antigravity CLI (`agy`):
+
+```bash
+agy plugin install [https://github.com/danhkon-md/hakon-dev-kit](https://github.com/danhkon-md/hakon-dev-kit)
+```
+
+> **Zero hardcoded paths:** On first launch, the bundled `pd-audit` MCP server automatically provisions an isolated virtual environment inside `${PLUGIN_DATA}/venv` using the locked dependencies in `servers/pd-audit/uv.lock`.
+
+---
+
+## 🛠️ Usage
+
+* **Bootstrap a new Python project:** Open `agy` in any empty directory and run `/init-uv-pytest`.
+* **Audit & clean Pure Data datasets:** Ask Antigravity in natural language (e.g., *"Audit `dataset.jsonl` with `pd-audit` and export a deduplicated version"*). The server validates root canvases (`#N canvas`), checks connection index bounds (`#X connect`), and removes both exact and structurally identical (`normalized`) patches.
+
 # Hakon Dev Kit
 
 Plugin para **Google Antigravity** con reglas de trabajo, una skill de inicialización de proyectos Python y un servidor MCP para auditar datasets JSONL de Pure Data.
