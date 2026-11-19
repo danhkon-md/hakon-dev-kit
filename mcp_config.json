@@ -4,12 +4,16 @@
       "command": "uv",
       "args": [
         "run",
+        "--frozen",
         "--directory",
-        "/Users/danko/Proyectos/mi-primera-app",
+        "${PLUGIN_ROOT}/servers/pd-audit",
         "python",
         "-m",
         "pd_audit.mcp_server"
       ],
+      "env": {
+        "UV_PROJECT_ENVIRONMENT": "${PLUGIN_DATA}/venv"
+      },
       "timeoutSeconds": 300
     }
   }

@@ -1,0 +1,15 @@
+# Dependencias y entornos
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.uv/
+
+# Secretos
+.env
+.env.*
+
+# macOS / editores
+.DS_Store
+.idea/
+.vscode/

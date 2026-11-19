@@ -1,6 +1,30 @@
 {
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "hakon-dev-kit",
+  "displayName": "Hakon Dev Kit",
   "version": "0.1.0",
-  "description": "Kit de desarrollo Python con uv, pytest, reglas Light Mode y servidor MCP pd-audit.",
-  "logo": "assets/logo.svg"
+  "description": "Kit de desarrollo Python con uv, pytest, reglas modulares y servidor MCP pd-audit para auditar y limpiar datasets JSONL de Pure Data.",
+  "logo": "assets/logo.svg",
+  "author": {
+    "name": "Danko",
+    "url": "https://github.com/danko"
+  },
+  "homepage": "https://github.com/danko/hakon-dev-kit",
+  "repository": "https://github.com/danko/hakon-dev-kit",
+  "license": "MIT",
+  "keywords": [
+    "python",
+    "uv",
+    "pytest",
+    "mcp",
+    "pure-data",
+    "jsonl",
+    "dataset",
+    "light-mode"
+  ],
+  "suggestedPrompts": [
+    "Inicializa este proyecto con uv y pytest",
+    "Audita un dataset JSONL de Pure Data",
+    "Revisa la estructura de src/, tests/ y scripts/"
+  ]
 }
